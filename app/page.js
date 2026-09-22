@@ -98,7 +98,7 @@ export default function Home(){
     <>
       <header className="nav">
         <div className="wrap navin">
-          <a className="logo" href="#top">PRIYANKA<span>.</span></a>
+          <a className="logo" href="#top">PRIYANKA SONI<span>.</span></a>
           <button className="hamb" onClick={()=>setMenu(!menu)} aria-label="Open navigation">☰</button>
           <nav className={menu?"open":""}>
             <a href="#work" onClick={()=>setMenu(false)}>Work</a>
@@ -202,7 +202,10 @@ export default function Home(){
               <h2>Have a system<br/><span>worth solving?</span></h2>
               <p>Hiring for backend engineering, discussing distributed systems, or simply want to connect?</p>
               <div className="buttons center">
-                <a className="primary" href={`mailto:${email}?subject=Hello%20Priyanka`}>Email me ↗</a>
+                <a className="primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=sonipriyasoni.92@gmail.com&su=Hello%20Priyanka"
+  target="_blank"
+  rel="noopener noreferrer"
+>Email me ↗</a>
                 <a className="secondary" href={linkedinUrl} target="_blank">LinkedIn ↗</a>
                 <a className="secondary" href="/Priyanka_Soni_Final_Resume.pdf" download>Download resume ↓</a>
               </div>
