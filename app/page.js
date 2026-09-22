@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const mediumUrl = "https://medium.com/@sonipriyasoni.92";
 const linkedinUrl = "https://www.linkedin.com/in/priyanka-soni-857a92292";
 const email = "sonipriyasoni.92@gmail.com";
+const resumeUrl =
+  "https://drive.google.com/file/d/1h8uxNJm14NzYyzyQZPsktn0HBcloBR33/view";
 
 function NetworkCanvas() {
   const ref = useRef(null);
@@ -107,7 +109,7 @@ export default function Home(){
             <a href="#writing" onClick={()=>setMenu(false)}>Writing</a>
             <a href="#contact" onClick={()=>setMenu(false)}>Contact</a>
           </nav>
-          <a className="navResume" href="/Priyanka_Soni_Final_Resume.pdf" download>Resume ↗</a>
+          <a className="navResume" href={resumeUrl}  target="_blank" rel="noopener noreferrer"> Resume ↗</a>
         </div>
       </header>
 
@@ -121,8 +123,7 @@ export default function Home(){
             <p className="heroText">Java · Spring Boot · Kafka · AWS — engineering microservices, event-driven workflows and distributed order-processing systems across e-commerce, healthcare and advertising.</p>
             <div className="buttons">
               <a className="primary" href="#work">Explore my work ↓</a>
-              <a className="secondary" href={`mailto:${email}?subject=Hello%20Priyanka`}>Let's connect ↗</a>
-              <a className="secondary" href={linkedinUrl} target="_blank">LinkedIn ↗</a>
+              <a className="secondary" href={linkedinUrl} target="_blank" rel="noopener noreferrer"> Let's connect ↗</a>
             </div>
             <div className="stats">
               {[["4+","years backend experience"],["10+","microservices"],["400+","REST APIs"],["5+","data technologies"]].map(([n,l])=><div className="stat" key={n}><b>{n}</b><span>{l}</span></div>)}
@@ -202,12 +203,9 @@ export default function Home(){
               <h2>Have a system<br/><span>worth solving?</span></h2>
               <p>Hiring for backend engineering, discussing distributed systems, or simply want to connect?</p>
               <div className="buttons center">
-                <a className="primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=sonipriyasoni.92@gmail.com&su=Hello%20Priyanka"
-  target="_blank"
-  rel="noopener noreferrer"
->Email me ↗</a>
+                <a className="primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=sonipriyasoni.92@gmail.com&su=Hello%20Priyanka" target="_blank" rel="noopener noreferrer">Email me ↗</a>
                 <a className="secondary" href={linkedinUrl} target="_blank">LinkedIn ↗</a>
-                <a className="secondary" href="/Priyanka_Soni_Final_Resume.pdf" download>Download resume ↓</a>
+                <a className="secondary" href={resumeUrl} target="_blank" rel="noopener noreferrer"> View Resume ↗</a>
               </div>
               <small>{email}</small>
             </div>
